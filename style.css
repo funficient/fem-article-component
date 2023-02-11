@@ -6,7 +6,7 @@
     --color-dark-blue: hsl(214, 17%, 51%);
     --color-gray-blue: hsl(212, 23%, 69%);
 
-    --color-neutral-text-white: hsla(0, 0%, 100%, 0.75);
+    --color-neutral-blue: hsla(210, 46%, 95%, 1);
     --color-neutral-text-grey: hsl(0, 0%, 95%);
 
     font-family: 'Manrope', sans-serif;
@@ -36,6 +36,16 @@
   ol[role='list'] {
     list-style: none;
   }
+
+  a {
+    text-decoration: none;
+  }
+
+  button {
+    border: none;
+    outline: none;
+    cursor: pointer;
+  }
   
   /* Set core root defaults */
   html:focus-within {
@@ -64,6 +74,7 @@
   /* Make images easier to work with */
   img,
   picture, 
+  ion-icon,
   svg {
     max-width: 100%;
     display: block;
@@ -85,6 +96,11 @@
     }
   }
   
+  
+  
+  
+  
+  
   /*----- Mobile first -----*/
  
   main {
@@ -104,7 +120,7 @@
 
   .article-card {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     align-items: center;
     padding: 3rem;
     box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
